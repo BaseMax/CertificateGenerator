@@ -1,5 +1,6 @@
-from PIL import Image, ImageDraw, ImageFont
 import os
+import re
+from PIL import Image, ImageDraw, ImageFont
 
 # Firstly, let's define some constants and paths
 BACKGROUND_IMG = 'certificate-background.png'
@@ -15,6 +16,10 @@ NAMES = []
 with open(FILE_NAMES, "r") as f:
     for line in f:
         line = line.strip()
+        # Replace \t or \n to space
+        
+
+        # Regex to replace [ \t\n]
         if line:
             NAMES.append(line)
 
