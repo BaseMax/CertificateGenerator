@@ -16,10 +16,9 @@ NAMES = []
 with open(FILE_NAMES, "r") as f:
     for line in f:
         line = line.strip()
-        # Replace \t or \n to space
-        
+        line = line.replace("\t", " ")
+        line = re.sub(r"\s+", " ", line)
 
-        # Regex to replace [ \t\n]
         if line:
             NAMES.append(line)
 
