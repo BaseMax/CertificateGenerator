@@ -18,16 +18,16 @@ img = Image.open(BACKGROUND_IMG)
 draw = ImageDraw.Draw(img)
 
 # Define the font and its size
-font = ImageFont.truetype(FONT_PATH, 50)
+font = ImageFont.truetype(FONT_PATH, 130)
 
 for name in NAMES:
     # center the text based on its size and the image size
     text_width, text_height = draw.textsize(name, font)
     x = (img.width - text_width) / 2
-    y = 200
+    y = 840
     
     # Draw the text on the image
-    draw.text((x, y), name, font=font, fill=(0, 0, 0))
+    draw.text((x, y), name, font=font, fill=(0, 116, 95))
     
     # Save the output image in the output directory with a unique filename 
     output_filename = os.path.join(OUTPUT_DIR, f"certificate-{name.replace(' ', '-').lower()}.png")
