@@ -8,7 +8,6 @@ FONT_PATH = "arial.ttf"
 OUTPUT_DIR = "output"
 FILE_NAMES = "names.txt"
 
-
 NAMES = []
 # NAMES = ["Ali Mohammadiyeh", "John Doe", "Jane Smith", "Iman Mirazimi"]
 
@@ -21,6 +20,8 @@ with open(FILE_NAMES, "r") as f:
 
         if line:
             NAMES.append(line)
+
+# NAMES = ["Aziz ul islam"]
 
 # Check output directory exists, if not create it
 if not os.path.exists(OUTPUT_DIR):
@@ -47,3 +48,4 @@ for name in NAMES:
     # Save the output image in the output directory with a unique filename 
     output_filename = os.path.join(OUTPUT_DIR, f"certificate-{name.replace(' ', '-').lower()}.png")
     img.save(output_filename)
+    print(output_filename, "generated")

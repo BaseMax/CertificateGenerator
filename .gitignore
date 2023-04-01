@@ -1,1 +1,6 @@
 output/*
+names.txt
+*.jpg
+*.png
+*.zip
+*.rar
