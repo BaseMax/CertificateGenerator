@@ -13,7 +13,7 @@ To use this script, follow these simple steps:
 - Edit the `names.txt` file and add the names of the people you want to generate certificates for, each on a new line.
 - Customize and update the `certificate-background.png` file according to your certificate design and style to reflect your organization's branding.
 - Run the `generator.py` script by typing `python generator.py`.
-- Your certificates will be generated and saved in the same directory as the `generator.py` file, with the participant's name added to the filename.
+- Your certificates will be generated and saved in the `output` directory as the `generator.py` file, with the participant's name added to the filename.
 
 ## Customization
 
