@@ -11,7 +11,7 @@ NAMES_FILE_PATH = "names.txt"
 FONT_SIZE = 130
 
 #==================================== read names from file ====================================#
-def Read_Names(file_path):
+def ReadNames(file_path):
     """
     Read the names from the specified file and return them as a list.
     """
@@ -27,7 +27,7 @@ def Read_Names(file_path):
                 names.append(line)
     return names
 #=========================================   file name ===================================================#
-def Certificate_Filename(name):
+def CertificateFileName(name):
     """
      make filename for the certificate image related on their names.
     """
@@ -35,7 +35,7 @@ def Certificate_Filename(name):
 
 #==================================== Design and make the certificate ====================================#
 
-def Design_Certificate(name):
+def DesignCertificate(name):
     """
     Design a certificate image for the each name.
     """
@@ -55,12 +55,12 @@ def Design_Certificate(name):
     draw.text((x_position, y_position), name, font=font, fill=TEXT_COLOR)
     
     # Save the output image in the output directory with a unique filename 
-    output_filename = Certificate_Filename(name)
+    output_filename = CertificateFileName(name)
     background_img.save(output_filename)
     print(f"{output_filename} generated")
     
 #======================================= create the certificates ==============================================#
-def Create_Certificates(names):
+def CreateCertificates(names):
     """
     Create a certificate image for each name in the list.
     """
@@ -69,11 +69,11 @@ def Create_Certificates(names):
         os.makedirs(OUTPUT_DIR_PATH)
     
     for name in names:
-        Design_Certificate(name)
+        DesignCertificate(name)
 
 if __name__ == "__main__":
     # Read the names from the file
-    names = Read_Names(NAMES_FILE_PATH)
+    names = ReadNames(NAMES_FILE_PATH)
 
     # Create a certificate image for each name
-    Create_Certificates(names)
+    CreateCertificates(names)
