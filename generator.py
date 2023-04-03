@@ -26,6 +26,12 @@ def Read_Names(file_path):
             if line:
                 names.append(line)
     return names
+#=========================================   file name ===================================================#
+def Certificate_Filename(name):
+    """
+     make filename for the certificate image related n their names.
+    """
+    return os.path.join(OUTPUT_DIR_PATH, f"certificate-{name.replace(' ', '-').lower()}.png")
 
 #==================================== Design and make the certificate ====================================#
 
@@ -49,7 +55,7 @@ def Design_Certificate(name):
     draw.text((x_position, y_position), name, font=font, fill=TEXT_COLOR)
     
     # Save the output image in the output directory with a unique filename 
-    output_filename = os.path.join(OUTPUT_DIR_PATH, f"certificate-{name.replace(' ', '-').lower()}.png")
+    output_filename = Certificate_Filename(name)
     background_img.save(output_filename)
     print(f"{output_filename} generated")
     
