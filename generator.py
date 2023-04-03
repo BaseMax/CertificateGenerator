@@ -11,7 +11,7 @@ NAMES_FILE_PATH = "names.txt"
 FONT_SIZE = 130
 
 #==================================== read names from file ====================================#
-def read_names(file_path):
+def Read_Names(file_path):
     """
     Read the names from the specified file and return them as a list.
     """
@@ -54,7 +54,7 @@ def Design_Certificate(name):
     print(f"{output_filename} generated")
     
 #======================================= create the certificates ==============================================#
-def create_certificates(names):
+def Create_Certificates(names):
     """
     Create a certificate image for each name in the list.
     """
