@@ -71,6 +71,7 @@ def Create_Certificates(names):
     for name in names:
         Design_Certificate(name)
 
+#======================================= init ==============================================#
 if __name__ == "__main__":
     # Read the names from the file
     names = Read_Names(NAMES_FILE_PATH)
