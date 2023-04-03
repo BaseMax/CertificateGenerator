@@ -67,7 +67,7 @@ def Create_Certificates(names):
 
 if __name__ == "__main__":
     # Read the names from the file
-    names = read_names(NAMES_FILE_PATH)
+    names = Read_Names(NAMES_FILE_PATH)
 
     # Create a certificate image for each name
-    create_certificates(names)
+    Create_Certificates(names)
