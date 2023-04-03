@@ -29,7 +29,7 @@ def Read_Names(file_path):
 #=========================================   file name ===================================================#
 def Certificate_Filename(name):
     """
-     make filename for the certificate image related n their names.
+     make filename for the certificate image related on their names.
     """
     return os.path.join(OUTPUT_DIR_PATH, f"certificate-{name.replace(' ', '-').lower()}.png")
 
