@@ -2,7 +2,7 @@
 
 Certificate Generator is a **python script** that allows you to generate certificates for your participants with just one click. If you are an event or conference organizer, this script will streamline your workflow and save you time by generating certificates for all of your attendees at once.
 
-![Certificate Generator](https://user-images.githubusercontent.com/2658040/226197734-ef7664e8-e772-4347-9a92-5913ea8088c1.png)
+![Certificate Generator](https://user-images.githubusercontent.com/2658040/229694107-da4c38cb-e18d-4ace-bb7b-d3fc17bdc4c8.jpg)
 
 ## Getting Started
 
