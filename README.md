@@ -25,4 +25,4 @@ Please feel free to customize and adapt this script to suit your needs.
 
 Thank you for choosing Certificate Generator!
 
-Copyright Max Base - irealmatin , 2023
+Copyright Max Base - 2023
