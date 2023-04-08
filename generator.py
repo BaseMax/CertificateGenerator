@@ -26,6 +26,7 @@ def ReadNames(file_path):
             if line:
                 names.append(line)
     return names
+
 #=========================================   file name ===================================================#
 def CertificateFileName(name):
     """
@@ -34,7 +35,6 @@ def CertificateFileName(name):
     return os.path.join(OUTPUT_DIR_PATH, f"certificate-{name.replace(' ', '-').lower()}.png")
 
 #==================================== Design and make the certificate ====================================#
-
 def DesignCertificate(name):
     """
     Design a certificate image for the each name.
